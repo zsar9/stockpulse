@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--radius: 8px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.card {
+	@apply bg-card/60 border border-gray-800 rounded-xl shadow-sm;
+}
+
+.table-row-hover {
+	@apply hover:bg-white/5 transition-colors;
+}
