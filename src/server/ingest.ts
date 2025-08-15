@@ -1,4 +1,5 @@
 import { upsertStock, setMetaLastUpdated, purgeOldStocks } from './db';
+import db from './db.ts';
 import dotenv from 'dotenv';
 dotenv.config();
 console.log('Demo mode:', process.env.ALPHA_VANTAGE_API_KEY?.includes('YOUR_'));
