@@ -1,4 +1,8 @@
 import { upsertStock, setMetaLastUpdated, purgeOldStocks } from './db';
+import dotenv from 'dotenv';
+dotenv.config();
+console.log('Demo mode:', process.env.ALPHA_VANTAGE_API_KEY?.includes('YOUR_'));
+
 
 const ALPHA_VANTAGE_KEY = process.env.ALPHA_VANTAGE_API_KEY || 'YOUR_ALPHA_VANTAGE_API_KEY_HERE';
 const FINNHUB_KEY = process.env.FINNHUB_API_KEY || 'YOUR_FINNHUB_API_KEY_HERE';
